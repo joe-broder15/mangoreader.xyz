@@ -22,8 +22,6 @@ body {
   align-items: center;
   padding: 10px;
   justify-content: center;
-  position: fixed;
-  width: 100%;
 
 }
 
@@ -71,6 +69,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* caption in showbox */
@@ -86,7 +86,7 @@ body {
 
 /* logo in showbox */
 #showbox-banner{
-  height: 20%;
+  width: 80%;
 }
 
 /* button box in showbox */
@@ -95,6 +95,7 @@ body {
   justify-content: space-around;
   margin-top: 40px;
   width: 50%;
+  flex-wrap: wrap;
 
 }
 
@@ -110,6 +111,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5px;
 
 }
 
@@ -196,4 +198,26 @@ footer div{
 
 footer div a{
   color: #141414;
+}
+
+/*RULES FOR SMALL SCREEN SIZES*/
+@media (max-width: 640px)
+{
+    #showbox-banner
+    {
+        display: none;
+    }
+
+    .news-post{
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+      padding: 20px;
+      border-top: 1px solid gray;
+    }
+
+    .news-post ul{
+      margin-left: 0px;
+    }
+
 }
