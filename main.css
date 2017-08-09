@@ -3,6 +3,11 @@
     src: url(fonts/ProximaNova-Bold.otf);
 }
 
+@font-face {
+    font-family: proxima-nova-light;
+    src: url(fonts/ProximaNova-Light.otf);
+}
+
 body {
     margin: 0;
 }
@@ -17,6 +22,8 @@ body {
   align-items: center;
   padding: 10px;
   justify-content: center;
+  position: fixed;
+  width: 100%;
 
 }
 
@@ -33,7 +40,7 @@ body {
 /* Buttons for navbar */
 .navButton{
   text-decoration: none;
-  color: black;
+  color: #141414;
   justify-content: flex-end;
   margin-left: 10px;
   font-family: proxima-nova-bold;
@@ -73,6 +80,10 @@ body {
   text-align: center;
 }
 
+.showbox-container h1 a {
+  color: #ececec;
+}
+
 /* logo in showbox */
 #showbox-banner{
   height: 20%;
@@ -96,6 +107,9 @@ body {
   box-shadow: 0 5px 6px 0 #141414;
   padding: 20px;
   border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -104,5 +118,82 @@ body {
   background: linear-gradient(-180deg, #FF6160 0%,  #FAD83F 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-left: 5px;
 
+}
+
+.download-button img{
+  height: 48px;
+}
+
+/*CONTAINERS FOR NEWS POSTS*/
+.news{
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  justify-content: center;
+
+}
+
+.news-container{
+  width: 65%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*MARKDOWN FOR POSTS*/
+.news-post{
+  justify-content: center;
+  align-items: flex-start;
+  width: 70%;
+  padding: 20px;
+  border-top: 1px solid gray;
+}
+
+.news-post p{
+  background: linear-gradient(-180deg, #FF6160 0%,  #FAD83F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+  font-family: proxima-nova-bold;
+  margin: none;
+}
+
+.news-post ul{
+
+  font-size: 24px;
+  font-family: proxima-nova-light;
+  color: #141414;
+  margin-left: 20px;
+  margin-top: none;
+}
+
+.news-post li{
+  margin-bottom: 10px;
+}
+
+#news-title{
+  background: linear-gradient(-180deg, #FF6160 0%,  #FAD83F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+  font-family: proxima-nova-bold;
+}
+
+footer div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 24px;
+  font-family: proxima-nova-light;
+  color: #141414;
+
+  background-color: #dddddd;
+}
+
+footer div a{
+  color: #141414;
 }
